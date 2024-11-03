@@ -2,7 +2,7 @@
 name = "materynskyis_yaml_schema_parser"
 version = "0.1.0"
 edition = "2021"
-licenst = "MIT"
+license = "MIT"
 description = "A YAML parser for database schema files"
 
 [dependencies]
