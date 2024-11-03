@@ -1,0 +1,10 @@
+[package]
+name = "materynskyis_yaml_schema_parser"
+version = "0.1.0"
+edition = "2021"
+licenst = "MIT"
+description = "A YAML parser for database schema files"
+
+[dependencies]
+anyhow = "1.0.92"
+peg = "0.8.4"

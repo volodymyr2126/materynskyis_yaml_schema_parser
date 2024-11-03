@@ -1,0 +1,28 @@
+use my_yaml_parser::parse_schema;
+
+#[test]
+fn test_parse_schema_valid() {
+    let input = "
+            schema:
+                - name: myschema
+                - tables:
+                    table1:
+                        column1:
+                            type: int
+                        column2:
+                            type: str
+                ";
+    assert!(parse_schema(input).is_ok());
+}
+
+#[test]
+fn test_parse_schema_invalid() {
+    let input = "
+            schema:
+                - name: myschema
+                - tables:
+                    table1:
+                        column1: int
+                ";
+    assert!(parse_schema(input).is_err());
+}
