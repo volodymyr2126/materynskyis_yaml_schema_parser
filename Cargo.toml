@@ -6,5 +6,7 @@ license = "MIT"
 description = "A YAML parser for database schema files"
 
 [dependencies]
-anyhow = "1.0.92"
-peg = "0.8.4"
+pest = "2.7.14"
+pest_derive = "2.7.14"
+anyhow = "1.0.93"
+thiserror = "2.0.0"
