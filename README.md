@@ -12,6 +12,7 @@ The parser uses the Pest library to define grammar rules that interpret specific
 The parsed data can be used to generate structured representation of database schemas for your application.
 
 ### Example of Schema
+```text
 Schema should be structured like this  
 File
  └── Schema Section
@@ -26,7 +27,8 @@ File
       │              │              ├── Column Entry
       │              │              │    ├── Column Name
       │              │              │    ├── Type
-      │              │              │    └── Mode  
+      │              │              │    └── Mode
+```  
 And generally look like this  
 ```yaml
 schema:
