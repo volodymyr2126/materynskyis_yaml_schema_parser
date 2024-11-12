@@ -1,10 +1,9 @@
-WHITESPACE = _{ " " | "\t" }
+WHITESPACE = _{ ( " " | "\t")+ }
 NEWLINE = _{ "\n" | "\r\n" }
-SUBENTRY = _{ NEWLINE | WHITESPACE+ }
 
 file = { SOI ~ schema_section ~ EOI}
 
-schema_section = { "schema:" ~ SUBENTRY ~ schema_entry }
+schema_section = { "schema:" ~ NEWLINE ~ WHITESPACE* ~ schema_entry }
 
 schema_entry = 
     { "name:" ~ WHITESPACE* ~ identifier ~ NEWLINE ~ "tables:" ~ NEWLINE ~ table_section }
@@ -17,7 +16,7 @@ table_entry =
 column_section = { column_entry+ }
 
 column_entry = 
-    { identifier ~ ":" ~ NEWLINE ~ column_type ~ NEWLINE ~ column_mode ~ NEWLINE}
+    { identifier ~ ":" ~ NEWLINE ~ column_type ~ NEWLINE ~ column_mode ~ (NEWLINE | EOI)}
 
 column_type = { WHITESPACE* ~ "type:" ~ WHITESPACE* ~ column_type_value }
 column_mode = { WHITESPACE* ~ "mode:" ~ WHITESPACE* ~ column_mode_value }
