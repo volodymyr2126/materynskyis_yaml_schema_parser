@@ -1,0 +1,14 @@
+schema:
+  name: myschema
+  tables:
+    user:
+      columns:
+        id:
+          type: int
+          mode: required
+        name:
+          type: str
+          mode: required
+        avg_grade:
+          type: float
+          mode: nullable
