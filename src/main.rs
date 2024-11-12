@@ -1,6 +1,7 @@
 use anyhow::{self, Result};
 use materynskyis_yaml_schema_parser::*;
 use std::{env, fs, process};
+#![doc = include_str!("../docs.md")]
 
 fn print_help() {
     println!("YAML Schema Parser CLI");
