@@ -20,3 +20,4 @@ clean:
 
 doc:
 	cargo doc --open
+precommit: fmt lint test
