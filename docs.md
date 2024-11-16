@@ -7,7 +7,7 @@ The parser uses the Pest library to define grammar rules that interpret specific
 - Tables within the schema
 - Columns their types and modes within each table
 
-The parsed data can be used to generate structured representation of database schemas for your application.
+The parsed data can be used to generate structured representation of database schemas for your application.  
 ***GRAMMAR***
 1. WHITESPACE and NEWLINE  
     Handle whitespace and line breaks for flexibility in formatting.
