@@ -1,5 +1,5 @@
 use anyhow::{self, Result};
-use materynskyis_yaml_schema_parser::*;
+use yaml_database_schema_parser::*;
 use std::{env, fs, process};
 
 fn print_help() {

@@ -1,5 +1,5 @@
 use anyhow::{anyhow, Result};
-use materynskyis_yaml_schema_parser::*;
+use yaml_database_schema_parser::*;
 use pest::Parser;
 
 #[test]
