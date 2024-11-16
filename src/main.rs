@@ -1,6 +1,6 @@
 use anyhow::{self, Result};
-use yaml_database_schema_parser::*;
 use std::{env, fs, process};
+use yaml_database_schema_parser::*;
 
 fn print_help() {
     println!("YAML Schema Parser CLI");

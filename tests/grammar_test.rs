@@ -1,6 +1,6 @@
 use anyhow::{anyhow, Result};
-use yaml_database_schema_parser::*;
 use pest::Parser;
+use yaml_database_schema_parser::*;
 
 #[test]
 fn identifier_test() -> anyhow::Result<()> {
