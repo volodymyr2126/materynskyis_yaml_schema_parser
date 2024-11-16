@@ -110,7 +110,7 @@ pub fn parse_schema(input: &str) -> Result<Schema, SchemaErr> {
 /// # Returns
 ///
 /// A `Result` containing a vector of `Table` structs or an error if parsing fails.
-fn parse_tables(pair: Pair<Rule>) -> Result<Vec<Table>, SchemaErr> {
+pub fn parse_tables(pair: Pair<Rule>) -> Result<Vec<Table>, SchemaErr> {
     let mut tables = Vec::new();
 
     for table_entry in pair.into_inner() {
@@ -147,7 +147,7 @@ fn parse_tables(pair: Pair<Rule>) -> Result<Vec<Table>, SchemaErr> {
 /// # Returns
 ///
 /// A `Result` containing a vector of `Column` structs or an error if parsing fails.
-fn parse_columns(pair: Pair<Rule>) -> Result<Vec<Column>, SchemaErr> {
+pub fn parse_columns(pair: Pair<Rule>) -> Result<Vec<Column>, SchemaErr> {
     let mut columns = Vec::new();
 
     for column_entry in pair.into_inner() {

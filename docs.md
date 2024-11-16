@@ -1,5 +1,6 @@
-***DOCUMENTATION ON DOCS.RS***  
-
+***USEFUL LINKS***  
+[This crate on crates.io](https://crates.io/crates/yaml_database_schema_parser)
+[Documentation on docs.rs](https://crates.io/crates/yaml_database_schema_parser)
 ***PURPOSE***  
 The parser uses the Pest library to define grammar rules that interpret specific `.yaml` structures. It parses:
 - Schema name
